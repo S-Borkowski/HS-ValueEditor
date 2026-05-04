@@ -1,0 +1,89 @@
+HS Value Scanner Instructions
+=============================
+
+Important Notice
+----------------
+This tool is intended for offline/single-player use only.
+
+Do not use it in multiplayer, online characters, leaderboards, trading, or any mode where anti-cheat protection is active.
+
+Basic Usage
+-----------
+Use this program like a classic value scanner.
+
+1. Start Hero Siege in offline/single-player mode.
+2. Open HS Value Scanner.
+3. Click Select Process and choose Hero_Siege.exe.
+4. Enter the current value you want to search for.
+5. For Magic Find and many other Hero Siege stats, use Double first.
+6. Click First Scan.
+7. Change the value in-game.
+8. Click Next Scan to narrow the results.
+9. Repeat until the correct address remains.
+10. Select the result.
+11. Enter a new value.
+12. Click Write.
+13. Click Freeze if you want the value to stay active.
+
+Persistent Address Workflow
+---------------------------
+Hero Siege changes raw memory addresses when the game is restarted. To avoid finding the same address every time, save a pointer path.
+
+1. Find the value/address as usual.
+2. Right-click the correct result.
+3. Select Add to Favorites.
+4. After it appears in Favorites, right-click it again.
+5. Select Find Pointer Path.
+6. Watch the Log area at the bottom.
+7. Wait about 10-15 seconds.
+8. When the Log says Pointer path found, the address is now persistent.
+9. Click Save in the preset bar.
+
+After this, when you restart the game and attach the editor again, the saved pointer can be resolved automatically and the address can appear again in the Results section.
+
+Preset Usage
+------------
+Presets are saved groups of favorite addresses.
+
+For example:
+- Create a preset named MF for Magic Find.
+- Create another preset for another build or stat setup.
+
+Recommended workflow:
+
+1. Create or select a preset from the Preset dropdown.
+2. Add the correct addresses to Favorites.
+3. Find Pointer Path for each important favorite.
+4. Click Save.
+
+Next time:
+
+1. Start Hero Siege.
+2. Open HS Value Scanner.
+3. Attach to Hero_Siege.exe.
+4. Select your preset.
+5. Wait for automatic pointer resolving.
+6. Use Write, Freeze, Unfreeze, or Move to Results as needed.
+
+Sharing Presets
+---------------
+Presets are saved in:
+
+hs_favorites.json
+
+To share presets with another user, send them HSValueScanner.exe and your hs_favorites.json file. The other user should place hs_favorites.json in the same folder as HSValueScanner.exe.
+
+Pointer paths are not guaranteed to work on every computer. They usually work best when the game version, character state, and opened game screen are similar. If a pointer does not resolve on another computer, that user should scan the value again and create a new pointer path.
+
+Magic Find Tips
+---------------
+When scanning for Magic Find, ignore bonus Magic Find from difficulty if the game adds it to the displayed total.
+
+If your scan results are confusing, remove items or effects that add extra Magic Find, then scan again with a cleaner value.
+
+Troubleshooting
+---------------
+- If the address shows ?, click Resolve All or reattach to the process.
+- If no pointer path is found, try scanning again from a cleaner game state.
+- If Windows asks for permission, allow the tool to run as administrator.
+- If a major game update changes memory layout, old pointer paths may need to be recreated.
