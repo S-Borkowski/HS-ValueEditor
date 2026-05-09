@@ -1,3 +1,12 @@
+# HS Value Scanner
+
+Part of the **Hero Siege Offline Toolkit**.
+
+> Offline / single-player value scanning tool for Hero Siege.  
+> Main hub: https://github.com/falorfrozen-cmd/hero-siege-offline-toolkit
+
+---
+
 HS Value Scanner v1.0.1
 =======================
 
